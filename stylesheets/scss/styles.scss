@@ -1,0 +1,135 @@
+/* CSS Reset Starts */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; } *{box-sizing: border-box; line-height: 1.4;}
+/* CSS Reset Ends */
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Custom Scroll Bar Starts */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Custom Scroll Bar Ends */
+
+.grid{
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ATF Css Starts */
+.atf-wrap{
+    height: 70vh;
+    background: #41b0bf;
+    overflow: hidden;
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        .head-wrap{
+            padding: 28px 0;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin-left: 50px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    a{
+                        font-size: 15px;
+                        color: #f2f2f2;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 2px;
+                            border-radius: 50%;
+                            background-color: #f2f2f2;
+                            transition: all 450ms;
+                            bottom: -7px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        &:hover{
+                            &:after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .first-wrap{
+        margin-top: 72px;
+        background: url('../../images/atf-bg.png') top center / contain repeat-x;
+        .after-wrap{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cent-wrap{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h1{
+                font-family: 'Sacramento', cursive;
+                color: #fff;
+                font-size: 70px;
+                padding: 10px 0;
+            }
+            .line2{
+                font-size: 40px;
+                color: #f2f2f2;
+                margin: 25px 0;
+                position: relative;
+                overflow: hidden;
+                height: 50px;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                    width: 2px;
+                    height: 70%;
+                    background-color: #aebcb9;
+                }
+                b{
+                    width: 0;
+                    display: inline-block;
+                    transition: width 450ms linear 450ms;
+                    -webkit-transition: width 450ms linear 450ms;
+                    -o-transition: width 450ms linear 450ms;
+                    -moz-transition: width 450ms linear 450ms;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+/* ATF Css Ends */
