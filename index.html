@@ -8,8 +8,11 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./stylesheets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="parent-wrap">
@@ -18,9 +21,9 @@
                 <div class="head-wrap">
                     <div class="grid">
                         <ul>
-                            <li><a>About</a></li>
-                            <li><a>Skills</a></li>
-                            <li><a>Projects</a></li>
+                            <li><a class="abt-lnk">About</a></li>
+                            <li><a class="skl-lnk">Skills</a></li>
+                            <li><a class="prj-lnk">Projects</a></li>
                         </ul>
                     </div>
                 </div>
@@ -31,13 +34,175 @@
                         <div class="cent-wrap">
                             <img src="./images/plane.gif" alt="plane-gif">
                             <h1>Tejas Nashikkar</h1>
-                            <p class="line2"><span>I am</span> <b class="hidden"></b></p>
+                            <p class="line2"><span>I am</span> <b class="hidden">a web developer.</b></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="second-wrap" id="about">
+            <div class="grid">
+                <div class="abt-wrap">
+                    <div class="left-wrap">
+                        <img src="./images/TejasNashikkar_img.jpg" alt="TejasNashikkar_img" class="me-img">
+                        <div class="social-wrap">
+                            <a href="https://www.facebook.com/tejas.nashikkar7/" target="_blank"><img src="./images/fb.png"></a>
+                            <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank"><img src="./images/linkedin.png"></a>
+                            <a href="https://www.instagram.com/invites/contact/?i=za9tatt7fvgz&utm_content=ai1n7x" target="_blank"><img src="./images/insta.png"></a>
+                            <a href="mailto:nashikkar.tejas@gmail.com"><img src="./images/gmail.png"></a>
+                        </div>
+                    </div>
+                    <div class="right-wrap">
+                        <h2>About me</h2>
+                        <p>Hi, I am Tejas Nashikkar, a 31 year old Web Developer living in <a href="https://www.google.com/maps/place/Kitchener,+ON/@43.4303489,-80.6163987,11z/data=!3m1!4b1!4m5!3m4!1s0x882bf48c03ee5105:0x9525f8e6df5f544b!8m2!3d43.4516395!4d-80.4925337" target="_blank">Kitechener, Ontario Canada</a>. I am a Computer Science Engineer and currently pursing post graduation in Web Development. I was working as a Senior UI Developer at <a href="https://www.media.net/" target="_blank">Media.net</a> with a total experience of 5 years.</p>
+                        <p>Have a look at my profile on <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank">linkedin</a>, <a href="#">download</a> my resume below, or just drop me an <a href="mailto:nashikkar.tejas@gmail.com">email</a>. I am always excited to work in like minded people.</p>
+                    </div>
+                </div>
+                <hr class="sep">
+                <div class="nums-wrap">
+                    <div class="num">
+                        <h3 class="count" data-count="97000">0</h3>
+                        <p>lines of code</p>
+                    </div>
+                    <div class="num">
+                        <h3 class="count" data-count="70945702">0</h3>
+                        <p>pixels rendered</p>
+                    </div>
+                    <div class="num">
+                        <h3 class="count" data-count="5570">0</h3>
+                        <p>hours Dota2 played</p>
+                    </div>
+                    <div class="num">
+                        <h3 class="count" data-count="5">0</h3>
+                        <p>years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third-wrap" id="skills">
+            <div class="grid">
+                <h2>Skills</h2>
+                <div class="skill-wrap">
+                    <div class="skillbar" data-percent="80%">
+                        <div class="skillbar-title"><span>Javascript</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar" data-percent="75%">
+                        <div class="skillbar-title"><span>ReactJS</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">75%</div>
+                    </div>
+                    <div class="skillbar" data-percent="95%">
+                        <div class="skillbar-title"><span>HTML5</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">95%</div>
+                    </div>
+                    <div class="skillbar" data-percent="95%">
+                        <div class="skillbar-title"><span>CSS3</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">95%</div>
+                    </div>
+                    <div class="skillbar" data-percent="65%">
+                        <div class="skillbar-title"><span>JAVA</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">65%</div>
+                    </div>
+                    <div class="othr-skill-wrap">
+                        <div class="inner-wrap">
+                            <ul>
+                                <li>AngularJS</li>
+                                <li>Wordpress</li>
+                                <li>Sitecore</li>
+                                <li>SCSS & LESS</li>
+                            </ul>
+                            <ul>
+                                <li>MEAN/MERN</li>
+                                <li>SQL</li>
+                                <li>D3 JS</li>
+                                <li>PHP</li>
+                            </ul>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio</li>
+                                <li>Invision</li>
+                                <li>Zeplin</li>
+                            </ul>
+                            <ul>
+                                <li>AWS</li>
+                                <li>GULP</li>
+                                <li>Git</li>
+                                <li>Mustache</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dwnld-wrap">
+                        <p>Download my Resume</p>
+                        <a class="dwnld-btn" href="./assets/TejasNashikkar_Resume.pdf" download><img src="./images/download.png" alt="download-button"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-wrap" id="projects">
+            <div class="grid">
+                <h2>Projects</h2>
+                <div class="proj-wrap">
+                    <div class="proj">
+                        <h4>PDT Website</h4>
+                        <a href="#" target="_blank"><img src="./images/pdt-website.jpg" alt="pdt-website"></a>
+                    </div>
+                    <div class="proj">
+                        <h4>Utility Dashboard</h4>
+                        <a href="#" target="_blank"><img src="./images/dashboard.jpg" alt="dashboard"></a>
+                    </div>
+                    <div class="proj">
+                        <h4>Image Gallery</h4>
+                        <a href="#" target="_blank"><img src="./images/img-gallry.jpg" alt="image-gallery"></a>
+                    </div>
+                    <div class="proj">
+                        <h4>Find The Penguins Game</h4>
+                        <a href="#" target="_blank"><img src="./images/ftp-game.jpg" alt="ftp-game"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-wrap">
+            <div class="grid">
+                <h2>Inspiring quotes</h2>
+                <div class="swiper">
+                    <div class="quotes-wrap swiper-wrapper">
+                        <div class="quote swiper-slide">
+                            <img src="./images/steve-jobs.jpg" alt="Steve Jobs">
+                            <p class="txt">"Because the people who are crazy enough to think they can change the world are the ones who do."</p>
+                            <p class="bywho">- Steve Jobs</p>
+                        </div>
+                        <div class="quote swiper-slide">
+                            <img src="./images/bill-gates.jpg" alt="Bill Gates">
+                            <p class="txt">"Success is a lousy teacher. It seduces smart people into thinking they can't lose. "</p>
+                            <p class="bywho">- Bill Gates</p>
+                        </div>
+                        <div class="quote swiper-slide">
+                            <img src="./images/linus-torvalds.jpg" alt="Linus Torvalds">
+                            <p class="txt">"See, you not only have to be a good coder to create system like Linux, you have to be a sneaky bastard too."</p>
+                            <p class="bywho">- Linus Torvalds</p>
+                        </div>
+                        <div class="quote swiper-slide">
+                            <img src="./images/larry-page.jpg" alt="Larry Page">
+                            <p class="txt">"f you're changing the world, you're working on important things. You're excited to get up in the morning."</p>
+                            <p class="bywho">- Larry Page</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Tejas Nashikkar</p>
+            <img src="./images/footer-img.png">
+        </footer>
     </div>
-    <script src="./js/textShow.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
