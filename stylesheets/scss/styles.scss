@@ -184,7 +184,7 @@ body{
             }
         }
         .right-wrap{
-            h2{
+            h3{
                 font-size: 50px;
                 color: #3a3a3a;
                 margin-bottom: 10px;
@@ -196,7 +196,10 @@ body{
                 &:first-of-type{
                     padding-bottom: 30px;
                 }
-                
+                a.to-resume{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -214,7 +217,7 @@ body{
             flex-flow: column;
             justify-content: center;
             align-items: center;
-            h3{
+            h4{
                 font-size: 30px;
                 color: #009ca8;
             }
@@ -232,7 +235,7 @@ body{
 .third-wrap{
     padding: 40px 0;
     background-color: #303030;
-    h2{
+    h3{
         font-size: 50px;
         color: #fff;
         margin-bottom: 10px;
@@ -402,7 +405,7 @@ body{
 /* Fourth wrap CSS Starts */
 .fourth-wrap{
     padding: 70px 0;
-    h2{
+    h3{
         font-size: 50px;
         color: #3a3a3a;
         margin-bottom: 10px;
@@ -440,7 +443,7 @@ body{
     padding: 40px 0;
     margin: 70px 0;
     background-color: #e55c4c;
-    h2{
+    h3{
         font-size: 50px;
         color: #fff;
         margin-bottom: 40px;

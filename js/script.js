@@ -87,3 +87,6 @@ document.querySelector('.skl-lnk').addEventListener('click', () => {
 document.querySelector('.prj-lnk').addEventListener('click', () => {
     window.scrollTo(0, 2120);
 });
+document.querySelector('.to-resume').addEventListener('click', () => {
+    window.scrollTo(0, 1600);
+});
