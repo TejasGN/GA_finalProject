@@ -12,5 +12,11 @@ footer{
         height: 240px;
         margin-bottom: -5px;
     }
+    @media only screen and (max-width: 660px){
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 /* Footer CSS Ends */

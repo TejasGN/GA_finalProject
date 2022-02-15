@@ -44,7 +44,7 @@ class Third extends React.Component{
                                 <ul>
                                     <li>MEAN/MERN</li>
                                     <li>SQL</li>
-                                    <li>D3 JS</li>
+                                    <li>Firebase</li>
                                     <li>PHP</li>
                                 </ul>
                                 <ul>
@@ -57,7 +57,7 @@ class Third extends React.Component{
                                     <li>AWS</li>
                                     <li>GULP</li>
                                     <li>Git</li>
-                                    <li>Mustache</li>
+                                    <li>D3 JS</li>
                                 </ul>
                             </div>
                         </div>

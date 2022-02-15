@@ -46,5 +46,21 @@
             }
         }
     }
+    @media only screen and (max-width: 1200px){
+        .swiper{
+            padding-bottom: 60px;
+            max-width: 700px;
+        }
+        .quotes-wrap .quote .txt{
+            max-width: 500px;
+        }
+    }
+    @media only screen and (max-width: 660px){
+        .swiper{
+            .swiper-button-prev, .swiper-button-next{
+                display: none;
+            }
+        }
+    }
 }
 /* Fifth wrap CSS Ends */

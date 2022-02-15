@@ -76,5 +76,24 @@
             }
         }
     }
+    @media only screen and (max-width: 800px){
+        .abt-wrap{
+            padding: 0;
+            flex-flow: column;
+            text-align: center;
+            .left-wrap{
+                margin: 0 0 40px;
+            }
+        }
+        .nums-wrap{
+            flex-flow: column;
+            .num{
+                margin-top: 30px;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
 /* Second wrap CSS Ends */

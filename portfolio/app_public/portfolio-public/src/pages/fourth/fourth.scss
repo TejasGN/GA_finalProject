@@ -31,5 +31,13 @@
             }
         }
     }
+    @media only screen and (max-width: 1200px){
+        .proj-wrap{
+            justify-content: center;
+            max-width: 400px;
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
 }
 /* Fourth wrap CSS Ends */

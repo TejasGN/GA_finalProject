@@ -16,7 +16,7 @@ class Fifth extends React.Component{
                             </div>
                             <div className="quote swiper-slide">
                                 <img src="images/bill-gates.jpg" alt="Bill Gates" />
-                                <p className="txt">"Success is a lousy teacher. It seduces smart people into thinking they can't lose. "</p>
+                                <p className="txt">"Success is a lousy teacher. It seduces smart people into thinking they can't lose."</p>
                                 <p className="bywho">- Bill Gates</p>
                             </div>
                             <div className="quote swiper-slide">
@@ -26,7 +26,7 @@ class Fifth extends React.Component{
                             </div>
                             <div className="quote swiper-slide">
                                 <img src="images/larry-page.jpg" alt="Larry Page" />
-                                <p className="txt">"f you're changing the world, you're working on important things. You're excited to get up in the morning."</p>
+                                <p className="txt">"If you're changing the world, you're working on important things. You're excited to get up in the morning."</p>
                                 <p className="bywho">- Larry Page</p>
                             </div>
                         </div>
