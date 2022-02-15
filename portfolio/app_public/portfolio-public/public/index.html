@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Nashikkar</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./stylesheets/css/styles.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      window.addEventListener('load', function() {
+        const abtTxt = document.querySelector('.line2 b');
+        var numCountFlag = true;
+        setTimeout(() => {
+            abtTxt.classList.add('show');
+        }, 450);
+        document.addEventListener('scroll', () => {
+          if(window.scrollY >= 255 && numCountFlag){
+            $(".count").each(function () {
+                var count = $(this);
+                var countTo = count.attr("data-count");
+                $({ countNum: count.text() }).animate(
+                    {
+                        countNum: countTo
+                    },
+                    {
+                        duration: 1900,
+                        easing: "linear",
+                        step: function () {
+                            count.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            count.text(this.countNum);
+                        }
+                    }
+                );
+            });
+            numCountFlag = false;
+          }
+        });
+            
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 4000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+
+        document.querySelector('.abt-lnk').addEventListener('click', () => {
+            window.scrollTo(0, 400);
+        });
+        document.querySelector('.skl-lnk').addEventListener('click', () => {
+            window.scrollTo(0, 1220);
+        });
+        document.querySelector('.prj-lnk').addEventListener('click', () => {
+            window.scrollTo(0, 2120);
+        });
+        document.querySelector('.to-resume').addEventListener('click', () => {
+            window.scrollTo(0, 1600);
+        });
+      });
+    </script>
+  </body>
+</html>
