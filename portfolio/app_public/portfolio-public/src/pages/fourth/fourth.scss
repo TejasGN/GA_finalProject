@@ -1,0 +1,35 @@
+/* Fourth wrap CSS Starts */
+.fourth-wrap{
+    padding: 70px 0;
+    h3{
+        font-size: 50px;
+        color: #3a3a3a;
+        margin-bottom: 10px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .proj-wrap{
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .proj{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+            h4{
+                font-size: 25px;
+                color: #009ca8;
+                padding-bottom: 12px;
+            }
+            img{
+                width: 100%;
+                max-width: 450px;
+            }
+        }
+    }
+}
+/* Fourth wrap CSS Ends */
