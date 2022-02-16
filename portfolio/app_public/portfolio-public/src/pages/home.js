@@ -4,6 +4,7 @@ import Second from './second/second';
 import Third from './third/third';
 import Fourth from './fourth/fourth';
 import Fifth from './fifth/fifth';
+import Sixth from './sixth/sixth';
 import Footer from './footer/footer';
 
 class Home extends React.Component{
@@ -15,6 +16,7 @@ class Home extends React.Component{
                 <Third />
                 <Fourth />
                 <Fifth />
+                <Sixth />
                 <Footer />
             </div>
         )
