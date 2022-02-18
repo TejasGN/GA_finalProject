@@ -45,9 +45,8 @@ class Sixth extends React.Component{
             details: this.state.details
         };
 
-        axios.get('http://localhost:3000/api/collectlist')
+        axios.get('/api/collectlist')
             .then(res => {
-                // console.log(res.data);
                 const found = res.data.some(el => el.email === userData.email);
                 if(found){
                     this.setState({
@@ -56,8 +55,7 @@ class Sixth extends React.Component{
                     });
                 }
                 else{
-                    console.log("enter");
-                    axios.post('http://localhost:3000/api/collectlist', userData)
+                    axios.post('/api/collectlist', userData)
                         .then(res => {
                             this.setState({
                                 msg: "Thank you! I'll contact you shortly.",
