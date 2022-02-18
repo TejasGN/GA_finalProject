@@ -23,6 +23,7 @@ const collectListAll = (req, res) => {
 };
 
 const collectListCreate = (req, res) => {
+    console.log(req)
     collect
         .create({
             name: req.body.name,
@@ -30,11 +31,8 @@ const collectListCreate = (req, res) => {
             details: req.body.details
         }, (err, collectdata) => {
             if (err) {
-                console.log(collectdata);
-                console.log(err);
                 sendJSONResponse(res, 400, err);
             } else {
-                console.log(collectdata);
                 sendJSONResponse(res, 200, collectdata);
             }
         });

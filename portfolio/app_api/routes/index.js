@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const cntrlCollects = require('../controllers/collect');
 
-// car items
+// collect items
 router
     .route('/collectlist')
     .get(cntrlCollects.collectListAll)
