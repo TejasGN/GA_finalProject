@@ -70,7 +70,7 @@ class Sixth extends React.Component{
         return(
             <section className="sixth-wrap">
                 <div className="grid">
-                    <h5>I am always excited work on some awesome projects, message me and let's discuss.</h5>
+                    <h5>I am always excited to work on some awesome projects, message me and let's discuss.</h5>
                     <h6>Write a message for me:</h6>
                     <form onSubmit={this.onSubmit}>
                         <p>
