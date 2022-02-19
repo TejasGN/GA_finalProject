@@ -9,9 +9,10 @@ class First extends React.Component{
                     <div className="head-wrap">
                         <div className="grid">
                             <ul>
-                                <li><a className="abt-lnk">About</a></li>
-                                <li><a className="skl-lnk">Skills</a></li>
-                                <li><a className="prj-lnk">Projects</a></li>
+                                <li><a className="abt-lnk" data-attr="second-wrap">About</a></li>
+                                <li><a className="skl-lnk" data-attr="third-wrap">Skills</a></li>
+                                <li><a className="prj-lnk" data-attr="fourth-wrap">Projects</a></li>
+                                <li><a className="cntct-lnk" data-attr="sixth-wrap">Contact Me</a></li>
                             </ul>
                         </div>
                     </div>
