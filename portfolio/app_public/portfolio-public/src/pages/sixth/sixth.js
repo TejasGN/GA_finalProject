@@ -68,7 +68,7 @@ class Sixth extends React.Component{
 
     render(){
         return(
-            <section className="sixth-wrap">
+            <section className="sixth-wrap" id="contact-me">
                 <div className="grid">
                     <h5>I am always excited to work on some awesome projects, message me and let's discuss.</h5>
                     <h6>Write a message for me:</h6>
