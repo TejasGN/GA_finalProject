@@ -74,8 +74,8 @@ class Sixth extends React.Component{
                     <h6>Write a message for me:</h6>
                     <form onSubmit={this.onSubmit}>
                         <p>
-                            <label><span>Your Name: </span><input type="text" name="name" value={this.state.name} onChange={this.onChangeName} required></input></label>
-                            <label><span>Email: </span><input type="email" name="email" value={this.state.email} onChange={this.onChangeEmail} required></input></label>
+                            <label><input type="text" name="name" value={this.state.name} onChange={this.onChangeName} required placeholder="Name"></input></label>
+                            <label><input type="email" name="email" value={this.state.email} onChange={this.onChangeEmail} required placeholder="Email"></input></label>
                         </p>
                         <p>
                             <label><span>Message: </span><textarea name="details" value={this.state.details} onChange={this.onChangeDetails} required></textarea></label>

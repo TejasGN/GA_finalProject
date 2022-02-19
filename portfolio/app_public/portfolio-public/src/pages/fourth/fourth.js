@@ -22,7 +22,7 @@ class Fourth extends React.Component{
                         </div>
                         <div className="proj">
                             <h4>Find The Penguins Game</h4>
-                            <a href="#" target="_blank"><img src="images/ftp-game.jpg" alt="ftp-game" /></a>
+                            <a href="https://ftp-game.000webhostapp.com/" target="_blank"><img src="images/ftp-game.jpg" alt="ftp-game" /></a>
                         </div>
                     </div>
                 </div>

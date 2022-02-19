@@ -10,9 +10,14 @@ footer{
     }
     img{
         height: 240px;
-        margin-bottom: -5px;
+        margin-bottom: -6px;
     }
     @media only screen and (max-width: 660px){
+        p{
+            max-width: 300px;
+            margin: 0 auto;
+            font-size: 60px;
+        }
         img{
             width: 100%;
             height: auto;
