@@ -10,10 +10,10 @@ class Second extends React.Component{
                         <div className="left-wrap">
                             <img src="images/TejasNashikkar_img.jpg" alt="TejasNashikkar_img" className="me-img" />
                             <div className="social-wrap">
-                                <a href="https://www.facebook.com/tejas.nashikkar7/" target="_blank"><img src="images/fb.png" /></a>
-                                <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank"><img src="images/linkedin.png" /></a>
-                                <a href="https://www.instagram.com/invites/contact/?i=za9tatt7fvgz&utm_content=ai1n7x" target="_blank"><img src="images/insta.png" /></a>
-                                <a href="mailto:nashikkar.tejas@gmail.com"><img src="images/gmail.png" /></a>
+                                <a href="https://www.facebook.com/tejas.nashikkar7/" target="_blank"><img src="images/fb.png" alt="facebook-img" /></a>
+                                <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank"><img src="images/linkedin.png" alt="linkedin-img" /></a>
+                                <a href="https://www.instagram.com/invites/contact/?i=za9tatt7fvgz&utm_content=ai1n7x" target="_blank"><img src="images/insta.png" alt="instagram-img" /></a>
+                                <a href="mailto:nashikkar.tejas@gmail.com"><img src="images/gmail.png" alt="gmail-img" /></a>
                             </div>
                         </div>
                         <div className="right-wrap">
