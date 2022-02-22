@@ -64,6 +64,12 @@ class Sixth extends React.Component{
                         });
                 }
             });
+
+        this.setState({
+            name: '',
+            email: '',
+            details: '',
+        })
     }
 
     render(){
