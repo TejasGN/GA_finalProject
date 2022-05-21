@@ -63,7 +63,7 @@ class Third extends React.Component{
                         </div>
                         <div className="dwnld-wrap">
                             <p>Download my Resume</p>
-                            <a className="dwnld-btn" href="./assets/TejasNashikkar_Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
+                            <a className="dwnld-btn" href="./assets/TejasNashikkar-Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
                         </div>
                     </div>
                 </div>
