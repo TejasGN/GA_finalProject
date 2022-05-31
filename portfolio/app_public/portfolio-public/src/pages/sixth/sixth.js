@@ -1,100 +1,64 @@
-import React from "react";
+import React, {useState} from "react";
 import './sixth.scss';
 import axios from 'axios';
 
-class Sixth extends React.Component{
-    constructor(props){
-        super(props);
+const Sixth = () =>{
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [details, setDetails] = useState("");
+    const [msg, setMsg] = useState("");
+    const [msgClass, setMsgClass] = useState("msg");
 
-        this.onChangeName = this.onChangeName.bind(this);
-        this.onChangeEmail = this.onChangeEmail.bind(this);
-        this.onChangeDetails = this.onChangeDetails.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-
-        this.state = {
-            name: '',
-            email: '',
-            details: '',
-            msg: '',
-            msgClass: 'msg'
-        }
-    }
-
-    onChangeName(e){
-        this.setState({
-            name: e.target.value
-        });
-    }
-    onChangeEmail(e){
-        this.setState({
-            email: e.target.value
-        });
-    }
-    onChangeDetails(e){
-        this.setState({
-            details: e.target.value
-        });
-    }
-
-    onSubmit(e){
+    const onSubmit = (e) => {
         e.preventDefault();
 
         const userData = {
-            name: this.state.name,
-            email: this.state.email,
-            details: this.state.details
+            name: name,
+            email: email,
+            details: details
         };
 
         axios.get('/api/collectlist')
             .then(res => {
                 const found = res.data.some(el => el.email === userData.email);
                 if(found){
-                    this.setState({
-                        msg: "Sorry for delay! I'll contact you shortly.",
-                        msgClass: "msg err"
-                    });
+                    setMsg("Sorry for delay! I'll contact you shortly.");
+                    setMsgClass("msg err");
                 }
                 else{
                     axios.post('/api/collectlist', userData)
                         .then(res => {
-                            this.setState({
-                                msg: "Thank you! I'll contact you shortly.",
-                                msgClass: "msg success"
-                            });
+                            setMsg("Thank you! I'll contact you shortly.");
+                            setMsgClass("msg success");
                         });
                 }
             });
 
-        this.setState({
-            name: '',
-            email: '',
-            details: '',
-        })
+        setName("");
+        setEmail("");
+        setDetails("");
     }
-
-    render(){
-        return(
-            <section className="sixth-wrap" id="contact-me">
-                <div className="grid">
-                    <h5>I am always excited to work on some awesome projects, message me and let's discuss.</h5>
-                    <h6>Write a message for me:</h6>
-                    <form onSubmit={this.onSubmit}>
-                        <p>
-                            <label><input type="text" name="name" value={this.state.name} onChange={this.onChangeName} required placeholder="Name"></input></label>
-                            <label><input type="email" name="email" value={this.state.email} onChange={this.onChangeEmail} required placeholder="Email"></input></label>
-                        </p>
-                        <p>
-                            <label><span>Message: </span><textarea name="details" value={this.state.details} onChange={this.onChangeDetails} required></textarea></label>
-                        </p>
-                        <p>
-                            <input type="submit" value="Submit"></input>
-                        </p>
-                    </form>
-                    <p className={this.state.msgClass}>{this.state.msg}</p>
-                </div>
-            </section>
-        );
-    }
-}
+    return(
+        <section className="sixth-wrap" id="contact-me">
+            <div className="grid">
+                <h5>I am always excited to work on some awesome projects, message me and let's discuss.</h5>
+                <h6>Write a message for me:</h6>
+                <form onSubmit={e => onSubmit(e)}>
+                    <p>
+                        <label><input type="text" name="name" value={name} onChange={e => setName(e.target.value)} required placeholder="Name"></input></label>
+                        <label><input type="email" name="email" value={email} onChange={e => setEmail(e.target.value)} required placeholder="Email"></input></label>
+                    </p>
+                    <p>
+                        <label><span>Message: </span><textarea name="details" value={details} onChange={e => setDetails(e.target.value)} required></textarea></label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit"></input>
+                    </p>
+                </form>
+                <p className={msgClass}>{msg}</p>
+            </div>
+        </section>
+    );
+};
 
 export default Sixth;
