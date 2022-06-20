@@ -32,7 +32,7 @@ const Third = () => {
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">65%</div>
                     </div>
-                    <div className="othr-skill-wrap">
+                    <div className="othr-skill-wrap" id="dwnld-resume">
                         <div className="inner-wrap">
                             <ul>
                                 <li>AngularJS</li>
@@ -60,7 +60,7 @@ const Third = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="dwnld-wrap" id="dwnld-resume">
+                    <div className="dwnld-wrap">
                         <p>Download my Resume</p>
                         <a className="dwnld-btn" href="./assets/TejasNashikkar-Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
                     </div>
