@@ -44,9 +44,12 @@
                 &:first-of-type{
                     padding-bottom: 30px;
                 }
-                a.to-resume{
-                    text-decoration: underline;
-                    cursor: pointer;
+                .dwnld-lnk{
+                    display: inline;
+                    a{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
             }
         }
