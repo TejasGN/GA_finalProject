@@ -39,7 +39,7 @@ const First = () => {
                         <div className="cent-wrap">
                             <img src="images/plane.gif" alt="plane-gif" />
                             <h1>Tejas Nashikkar</h1>
-                            <h2 className="line2"><span>I am</span> <b className="hidden">a web developer.</b></h2>
+                            <h2 className="line2"><span>I am</span> <b className="hidden">a Frontend Developer.</b></h2>
                         </div>
                     </div>
                 </div>
