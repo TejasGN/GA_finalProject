@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b3362529.css",
-    "main.js": "/static/js/main.b8079a95.js",
+    "main.js": "/static/js/main.30845a23.js",
     "static/js/787.b1207e3b.chunk.js": "/static/js/787.b1207e3b.chunk.js",
     "static/media/atf-bg.png": "/static/media/atf-bg.9c9bd8d60a603d4b8623.png",
     "index.html": "/index.html",
     "main.b3362529.css.map": "/static/css/main.b3362529.css.map",
-    "main.b8079a95.js.map": "/static/js/main.b8079a95.js.map",
+    "main.30845a23.js.map": "/static/js/main.30845a23.js.map",
     "787.b1207e3b.chunk.js.map": "/static/js/787.b1207e3b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3362529.css",
-    "static/js/main.b8079a95.js"
+    "static/js/main.30845a23.js"
   ]
 }
