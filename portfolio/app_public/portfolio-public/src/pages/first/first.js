@@ -1,5 +1,6 @@
 import React from "react";
 import './first.scss';
+import Typewriter from "../Typewriter/Typewriter";
 import ScrollIntoView from 'react-scroll-into-view';
 
 const First = () => {
@@ -39,7 +40,7 @@ const First = () => {
                         <div className="cent-wrap">
                             <img src="images/plane.gif" alt="plane-gif" />
                             <h1>Tejas Nashikkar</h1>
-                            <h2 className="line2"><span>I am</span> <b className="hidden">a Frontend Developer.</b></h2>
+                            <h2 className="line2">I am a <Typewriter /></h2>
                         </div>
                     </div>
                 </div>
