@@ -78,17 +78,6 @@
                 margin: 55px 0 0;
                 position: relative;
                 overflow: hidden;
-                height: 50px;
-                &:after{
-                    content: '';
-                    position: absolute;
-                    top: 5px;
-                    right: 0;
-                    width: 2px;
-                    height: 70%;
-                    background-color: #aebcb9;
-                    animation: cursor-blink 1.5s steps(2) infinite;
-                }
                 b{
                     width: 0;
                     display: inline-block;
@@ -116,6 +105,7 @@
             background-repeat: no-repeat;
             .after-wrap{
                 .cent-wrap{
+                    width: 100%;
                     img{
                         display: none;
                     }
@@ -123,11 +113,7 @@
                         font-size: 60px;
                     }
                     .line2{
-                        font-size: 30px;
-                        height: 40px;
-                        b.show{
-                            width: 317px;
-                        }
+                        font-size: 25px;
                     }
                 }
             }
