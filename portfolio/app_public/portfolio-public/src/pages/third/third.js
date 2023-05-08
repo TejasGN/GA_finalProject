@@ -48,7 +48,7 @@ const Third = () => {
                             </ul>
                             <ul>
                                 <li>Visual Studio Code</li>
-                                <li>Android Studio</li>
+                                <li>Jira</li>
                                 <li>Invision</li>
                                 <li>Zeplin</li>
                             </ul>
