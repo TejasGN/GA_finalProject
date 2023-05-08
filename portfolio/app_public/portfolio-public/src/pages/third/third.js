@@ -35,16 +35,16 @@ const Third = () => {
                     <div className="othr-skill-wrap" id="dwnld-resume">
                         <div className="inner-wrap">
                             <ul>
-                                <li>AngularJS</li>
-                                <li>Wordpress</li>
-                                <li>Sitecore</li>
+                                <li>React</li>
+                                <li>Javascript</li>
+                                <li>Agile SDLC</li>
                                 <li>SCSS &amp; LESS</li>
                             </ul>
                             <ul>
                                 <li>MEAN/MERN</li>
-                                <li>SQL</li>
-                                <li>Firebase</li>
-                                <li>PHP</li>
+                                <li>AngularJS</li>
+                                <li>HTML</li>
+                                <li>Typescript</li>
                             </ul>
                             <ul>
                                 <li>Visual Studio Code</li>
@@ -62,7 +62,7 @@ const Third = () => {
                     </div>
                     <div className="dwnld-wrap">
                         <p>Download my Resume</p>
-                        <a className="dwnld-btn" href="./assets/TejasNashikkar_Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
+                        <a className="dwnld-btn" href="./assets/TejasNashikkar-Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
                     </div>
                 </div>
             </div>
