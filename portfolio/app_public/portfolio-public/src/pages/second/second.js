@@ -8,7 +8,7 @@ const Second = () => {
             <div className="grid">
                 <div className="abt-wrap">
                     <div className="left-wrap">
-                        <img src="images/TejasNashikkar_img.jpg" className="me-img" alt="Tejas Nashikkar - software developer" />
+                        <img src="images/TejasNashikkar-img.jpg" className="me-img" alt="Tejas Nashikkar - software developer" />
                         <div className="social-wrap">
                             <a href="https://www.facebook.com/tejas.nashikkar7/" target="_blank"><img src="images/fb.png" alt="facebook-img" /></a>
                             <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank"><img src="images/linkedin.png" alt="linkedin-img" /></a>
