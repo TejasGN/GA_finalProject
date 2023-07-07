@@ -13,15 +13,15 @@ const Fourth = () => {
                     </div>
                     <div className="proj">
                         <h4>Image Gallery</h4>
-                        <a href="https://img-app.000webhostapp.com/" target="_blank"><img src="images/img-gallry.jpg" alt="image-gallery" /></a>
+                        <a href="https://cozy-panda-761004.netlify.app/" target="_blank"><img src="images/img-gallry.jpg" alt="image-gallery" /></a>
                     </div>
                     <div className="proj">
                         <h4>Utility Dashboard</h4>
-                        <a href="https://js-dashboard.000webhostapp.com/" target="_blank"><img src="images/dashboard.jpg" alt="dashboard" /></a>
+                        <a href="https://loquacious-basbousa-01f8b4.netlify.app/" target="_blank"><img src="images/dashboard.jpg" alt="dashboard" /></a>
                     </div>
                     <div className="proj">
                         <h4>Find The Penguins Game</h4>
-                        <a href="https://ftp-game.000webhostapp.com/" target="_blank"><img src="images/ftp-game.jpg" alt="ftp-game" /></a>
+                        <a href="https://effervescent-marigold-0d0e53.netlify.app/" target="_blank"><img src="images/ftp-game.jpg" alt="ftp-game" /></a>
                     </div>
                 </div>
             </div>
