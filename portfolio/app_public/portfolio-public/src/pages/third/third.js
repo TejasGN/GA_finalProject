@@ -10,12 +10,12 @@ const Third = () => {
                     <div className="skillbar" data-percent="80%">
                         <div className="skillbar-title"><span>Javascript</span></div>
                         <div className="skillbar-bar"></div>
-                        <div className="skill-bar-percent">80%</div>
+                        <div className="skill-bar-percent">85%</div>
                     </div>
                     <div className="skillbar" data-percent="75%">
                         <div className="skillbar-title"><span>ReactJS</span></div>
                         <div className="skillbar-bar"></div>
-                        <div className="skill-bar-percent">75%</div>
+                        <div className="skill-bar-percent">85%</div>
                     </div>
                     <div className="skillbar" data-percent="95%">
                         <div className="skillbar-title"><span>HTML5</span></div>
@@ -26,11 +26,6 @@ const Third = () => {
                         <div className="skillbar-title"><span>CSS3</span></div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">95%</div>
-                    </div>
-                    <div className="skillbar" data-percent="65%">
-                        <div className="skillbar-title"><span>JAVA</span></div>
-                        <div className="skillbar-bar"></div>
-                        <div className="skill-bar-percent">65%</div>
                     </div>
                     <div className="othr-skill-wrap" id="dwnld-resume">
                         <div className="inner-wrap">
