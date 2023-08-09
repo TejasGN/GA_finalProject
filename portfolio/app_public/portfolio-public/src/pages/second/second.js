@@ -18,8 +18,8 @@ const Second = () => {
                     </div>
                     <div className="right-wrap">
                         <h3>About me</h3>
-                        <p>Hi, I am Tejas Nashikkar, a Frontend Developer living in <a href="https://www.google.com/maps/place/Kitchener,+ON/@43.4303489,-80.6163987,11z/data=!3m1!4b1!4m5!3m4!1s0x882bf48c03ee5105:0x9525f8e6df5f544b!8m2!3d43.4516395!4d-80.4925337" target="_blank">Kitchener, Ontario Canada</a>. I am a Computer Science Engineer and a post graduate in Web Design and Development. I have experience of working in React, Angular and AngularJS frameworks for the frontend and also non-relational database like MongoDB.</p>
-                        <p>Have a look at my profile on <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank">linkedin</a>, <ScrollIntoView selector="#dwnld-resume" className="dwnld-lnk"><a>download</a></ScrollIntoView> my resume below, or just drop me an <a href="mailto:nashikkar.tejas@gmail.com">email</a>. I am always excited to work with like minded people.</p>
+                        <div className="desc-txt">Hi, I am Tejas Nashikkar, a Frontend Developer living in <a href="https://www.google.com/maps/place/Kitchener,+ON/@43.4303489,-80.6163987,11z/data=!3m1!4b1!4m5!3m4!1s0x882bf48c03ee5105:0x9525f8e6df5f544b!8m2!3d43.4516395!4d-80.4925337" target="_blank">Kitchener, Ontario Canada</a>. I am a Computer Science Engineer and a post graduate in Web Design and Development. I have experience of working in React, Angular and AngularJS frameworks for the frontend and also non-relational database like MongoDB.</div>
+                        <div className="desc-txt">Have a look at my profile on <a href="https://www.linkedin.com/in/tejas-nashikkar-60b5b4155" target="_blank">LinkedIn</a>, <ScrollIntoView selector="#dwnld-resume" className="dwnld-lnk"><a>download</a></ScrollIntoView> my resume below, or just drop me an <a href="mailto:nashikkar.tejas@gmail.com">email</a>. I am always excited to work with like minded people.</div>
                     </div>
                 </div>
                 <hr className="sep" />

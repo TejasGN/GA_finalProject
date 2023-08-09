@@ -6,6 +6,7 @@ import Fourth from './fourth/fourth';
 import Fifth from './fifth/fifth';
 import Sixth from './sixth/sixth';
 import Footer from './footer/footer';
+import Career from "./career/Career";
 
 class Home extends React.Component{
     render(){
@@ -14,6 +15,7 @@ class Home extends React.Component{
                 <First />
                 <Second />
                 <Third />
+                <Career />
                 <Fourth />
                 <Fifth />
                 <Sixth />

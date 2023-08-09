@@ -21,6 +21,11 @@ const First = () => {
                                 </ScrollIntoView>
                             </li>
                             <li>
+                                <ScrollIntoView selector="#career">
+                                    <a>Career</a>
+                                </ScrollIntoView>
+                            </li>
+                            <li>
                                 <ScrollIntoView selector="#projects">
                                     <a>Projects</a>
                                 </ScrollIntoView>
