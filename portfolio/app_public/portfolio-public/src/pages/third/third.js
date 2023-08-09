@@ -7,12 +7,12 @@ const Third = () => {
             <div className="grid">
                 <h3>Skills</h3>
                 <div className="skill-wrap">
-                    <div className="skillbar" data-percent="80%">
+                    <div className="skillbar" data-percent="85%">
                         <div className="skillbar-title"><span>Javascript</span></div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">85%</div>
                     </div>
-                    <div className="skillbar" data-percent="75%">
+                    <div className="skillbar" data-percent="85%">
                         <div className="skillbar-title"><span>ReactJS</span></div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">85%</div>
