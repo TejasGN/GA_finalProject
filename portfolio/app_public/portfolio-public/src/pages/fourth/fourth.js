@@ -7,13 +7,17 @@ const Fourth = () => {
             <div className="grid">
                 <h3>Personal Projects</h3>
                 <div className="proj-wrap">
-                <div className="proj">
+                    <div className="proj">
                         <h4>YouTube Clone</h4>
                         <a href="https://main--clever-faloodeh-e86ded.netlify.app/" target="_blank"><img src="images/youtube-clone.jpg" alt="youtube-clone-website" /></a>
                     </div>
                     <div className="proj">
                         <h4>Asian Crane Service</h4>
                         <a href="https://asiancraneservices.in/" target="_blank"><img src="images/acs-website.jpg" alt="asian-crane-service-website" /></a>
+                    </div>
+                    <div className="proj">
+                        <h4>Wedding Website</h4>
+                        <a href="https://vishwasandbharati.bond/" target="_blank"><img src="images/wedding-website.jpg" alt="wedding-website" /></a>
                     </div>
                     <div className="proj">
                         <h4>Image Gallery</h4>
