@@ -1,29 +1,37 @@
 import React from "react";
-import './third.scss';
+import "./third.scss";
 
 const Third = () => {
-    return(
+    return (
         <section className="third-wrap" id="skills">
             <div className="grid">
                 <h3>Skills</h3>
                 <div className="skill-wrap">
                     <div className="skillbar" data-percent="85%">
-                        <div className="skillbar-title"><span>Javascript</span></div>
+                        <div className="skillbar-title">
+                            <span>Javascript</span>
+                        </div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">85%</div>
                     </div>
                     <div className="skillbar" data-percent="85%">
-                        <div className="skillbar-title"><span>ReactJS</span></div>
+                        <div className="skillbar-title">
+                            <span>ReactJS</span>
+                        </div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">85%</div>
                     </div>
                     <div className="skillbar" data-percent="95%">
-                        <div className="skillbar-title"><span>HTML5</span></div>
+                        <div className="skillbar-title">
+                            <span>HTML5</span>
+                        </div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">95%</div>
                     </div>
                     <div className="skillbar" data-percent="95%">
-                        <div className="skillbar-title"><span>CSS3</span></div>
+                        <div className="skillbar-title">
+                            <span>CSS3</span>
+                        </div>
                         <div className="skillbar-bar"></div>
                         <div className="skill-bar-percent">95%</div>
                     </div>
@@ -32,7 +40,7 @@ const Third = () => {
                             <ul>
                                 <li>React</li>
                                 <li>Javascript</li>
-                                <li>Agile SDLC</li>
+                                <li>GraphQL</li>
                                 <li>SCSS &amp; LESS</li>
                             </ul>
                             <ul>
@@ -57,7 +65,16 @@ const Third = () => {
                     </div>
                     <div className="dwnld-wrap">
                         <p>Download my Resume</p>
-                        <a className="dwnld-btn" href="./assets/TejasNashikkar_Resume.pdf" download><img src="images/download.png" alt="download-button" /></a>
+                        <a
+                            className="dwnld-btn"
+                            href="./assets/TejasNashikkar_Resume.pdf"
+                            download
+                        >
+                            <img
+                                src="images/download.png"
+                                alt="download-button"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
