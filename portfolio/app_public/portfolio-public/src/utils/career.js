@@ -21,7 +21,7 @@ export const career = [
         profile: "Senior UI Developer",
         desc: [
             "Optimized several functionalities using vanilla JavaScript.",
-            "Worked on an internal dashboard tool(Datachimp) using ReactJS for front-end, Redux for state management, and Jest for writing test cases. The backend was structured using SQL.",
+            "Worked on an internal dashboard tool(Datachimp) using ReactJS for front-end, Redux for state management, and Jest for writing test cases.",
             "Contributed to developing new features and improvements of another dashboard (Console) using Angular 6+.",
             "Participated in code reviews.",
         ],
